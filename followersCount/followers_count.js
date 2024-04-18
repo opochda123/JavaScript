@@ -1,5 +1,17 @@
 let count = 0; // Initialize count to 0
 
+function zeroCount() {
+    count = count-count // set the variable to zero
+    displayCount(); 
+    checkCountZero();
+  } 
+
+function checkCountZero() {
+    if (count === 0) {
+      alert("Your Counter Has Been Reset to Zero");
+    } 
+  }
+
 function increaseCount() {
     count++; // Increment the count by 1
     displayCount(); // Display the count
@@ -17,6 +29,8 @@ function checkCountValue() {
   function displayCount() {
     document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
  }
+
+
 
 
 
