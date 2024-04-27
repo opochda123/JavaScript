@@ -14,7 +14,7 @@ function addBook() {
         };
         books.push(book);
         showbooks();
-        clearInputs();
+        //clearInputs();
     } else {
         alert('Please fill in all fields correctly.');
     }
@@ -34,4 +34,9 @@ function clearInputs() {
     document.getElementById('authorName').value = '';
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
+}
+
+function deleteBook(){
+    books.splice(0, 1);
+    showbooks(); 
 }
